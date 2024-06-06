@@ -65,6 +65,17 @@ export const BentoGridItem = ({
                         )
                     }
                 </div>
+                <div className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"}`}>
+                    {
+                        spareImg && (
+                            <img
+                                src={spareImg}
+                                alt={spareImg}
+                                className={`object-cover object-center w-full h-full`}
+                            />
+                        )
+                    }
+                </div>
             </div>
 
             <div className="group-hover/bento:translate-x-2 transition duration-200">
