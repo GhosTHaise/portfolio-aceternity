@@ -8,7 +8,8 @@ import Lottie from "react-lottie";
 
 const CopyMyEmail = () => {
     const [copied, setCopied] = useState(false)
-    const handleCopy = () => {
+
+    const handleCopy = async () => {
         const text = "hsu@jsmastery.pro";
         navigator.clipboard.writeText(text);
         setCopied(true);
@@ -28,13 +29,14 @@ const CopyMyEmail = () => {
                 />
             </div>
 
-            <MagicButton
-                title={copied ? 'Email copied' : 'Copy my email'}
-                icon={<IoCopyOutline />}
-                position="left"
-                otherClasses="!bg-[#1]"
-                handleClick={() => handleCopy()}
-            />
+            <div onClick={handleCopy}>
+                <MagicButton
+                    title={copied ? 'Email copied' : 'Copy my email'}
+                    icon={<IoCopyOutline />}
+                    position="left"
+                    otherClasses="!bg-[#1]"
+                />
+            </div>
         </div>
     )
 }
