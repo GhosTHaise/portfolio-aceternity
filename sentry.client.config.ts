@@ -26,5 +26,11 @@ Sentry.init({
       maskAllText: true,
       blockAllMedia: true,
     }),
+    Sentry.feedbackIntegration({
+      // Additional SDK configuration goes in here, for example:
+      colorScheme: "dark",
+      isNameRequired: true,
+      isEmailRequired: true,
+    }),
   ],
 });
