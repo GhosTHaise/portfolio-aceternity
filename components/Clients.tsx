@@ -1,4 +1,6 @@
 import React from 'react'
+import { InfiniteMovingCards } from './ui/InfiniteMovingCard'
+import { testimonials } from '@/data'
 
 const Clients = () => {
 
@@ -10,7 +12,12 @@ const Clients = () => {
                     satisfied clients
                 </span>
             </h1>
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col items-center max-lg:mt-10'>
+                <InfiniteMovingCards
+                    items={testimonials}
+                    direction='right'
+                    speed='slow'
+                />
 
             </div>
         </div>
