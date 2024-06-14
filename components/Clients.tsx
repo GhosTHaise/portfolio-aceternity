@@ -1,8 +1,26 @@
 import React from 'react'
+import { InfiniteMovingCards } from './ui/InfiniteMovingCard'
+import { testimonials } from '@/data'
 
 const Clients = () => {
+
     return (
-        <div>Clients</div>
+        <div className='py-20 ' id="projects">
+            <h1 className='heading'>
+                Kind words from {' '}
+                <span className='text-purple'>
+                    satisfied clients
+                </span>
+            </h1>
+            <div className='flex flex-col items-center mt-10 '>
+                <InfiniteMovingCards
+                    items={testimonials}
+                    direction='right'
+                    speed='slow'
+                />
+
+            </div>
+        </div>
     )
 }
 
