@@ -7,8 +7,8 @@ import Image from 'next/image'
 const Footer = () => {
     return (
         <footer
-            className='w-full pt-20 pb-10'
-            id='contect'
+            className='w-full pb-10 mb-[100px]'
+            id='contact'
         >
             <div className='w-full absolute left-0 -bottom-72'>
                 <img
@@ -30,7 +30,7 @@ const Footer = () => {
                         position='right'
                     />
                 </a>
-                <div className='w-full flex mt-16 md:flex-row flex-col justify-between items-center'>
+                <div className='w-full flex mt-16 md:flex-row flex-col justify-between items-center md:mb-4 gap-6'>
                     <p className='md:text-base text-sm md:font-normal font-light'>Copyright © 2024 GhosT</p>
 
                     <div className='flex items-center md:gap-3 gap-6'>
