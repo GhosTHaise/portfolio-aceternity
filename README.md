@@ -22,3 +22,4 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 > Preview
 ![portfolio](https://akrd.net/BE6GTEp5Zs3Gvhpf7fbxjG95dL2dUIU6StEpGiN-gfY)
+see website preview on : [www.fitiavana-portfolio.com](portfolio-aceternity-fitiavana.vercel.app)
